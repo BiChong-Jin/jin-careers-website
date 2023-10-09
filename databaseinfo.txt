@@ -1,0 +1,4 @@
+database: jincareers
+username: ugx2b0rpr2niswqjzsfw
+host: aws.connect.psdb.cloud
+password: pscale_pw_UQ1pzQjf2rCckuHiupul2DEoWbHXL1s0w12IQQi8otC
