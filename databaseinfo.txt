@@ -3,3 +3,4 @@ DATABASE_HOST=aws.connect.psdb.cloud
 DATABASE_USERNAME=9r259tg0rjapwtf8cweo
 DATABASE_PASSWORD=pscale_pw_2NGHocCPxZ0ItW0gnekP7ynZpAWkLq45jNi6wGyPHJt
 DATABASE=jincareers
+  
