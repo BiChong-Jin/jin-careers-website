@@ -10,13 +10,13 @@ def home_page():
 
   return render_template('home.html', jobs=jobs)
 
-@app.route('/job/<id>')
+@app.route('/job<id>')
 def show_job(id):
   job = load_job_from_db(id)
 
   return jsonify(job)
 
-@app.route('/job-<id>')
+@app.route('/job/<id>')
 def job_page(id):
   job = load_job_from_db(id)
 
