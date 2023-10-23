@@ -3,17 +3,33 @@
     <head>
         <title>{{job.title}} - Jin Careers</title>
         {% include 'bootstrap.html' %}
+        <style>
+            #banner {
+              height: 360px;
+              width: 100%;
+              object-fit:cover;
+              margin-bottom: 16px;
+            }
+        </style>
     </head>
     <body>
-        <h3>Title</h3>
-        <p>{{job.title}}</p>
-        <h3>Location</h3>
-        <p>{{job.location}}</p>
-        <h3>Salary</h3>
-        <p>{{job.salary}}</p>
-        <h3>Responsibilities</h3>
-        <p>{{job.responsibilities}}</p>
-        <h3>Requirements</h3>
-        <p>{{job.requirements}}</p>        
+        {% include 'nav.html' %}
+        <img class="img-fluid" id="banner" src="https://i.ibb.co/xqFjWc9/forest-moon-star.jpg" >
+        <div class="container">
+            <h1 class="text-center mt-2 mb-4">
+              ToWer
+            </h1>
+            <h3>Title</h3>
+            <p>{{job.title}}</p>
+            <h3>Location</h3>
+            <p>{{job.location}}</p>
+            <h3>Salary</h3>
+            <p>{{job.salary}}</p>
+            <h3>Responsibilities</h3>
+            <p>{{job.responsibilities}}</p>
+            <h3>Requirements</h3>
+            <p>{{job.requirements}}</p>
+        </div>
+        {% include 'footer.html' %}        
     </body>
 </html>
