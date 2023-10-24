@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 from database import load_jobs_from_db, load_job_from_db
 
 app = Flask(__name__)
@@ -21,6 +21,13 @@ def job_page(id):
   job = load_job_from_db(id)
 
   return render_template('jobpage.html', job=job)
+
+@app.route('/job/<id>/apply', methods=['post'])
+def apply_to_job(id):
+  job = load_job_from_db(id)
+  data = request.form
+
+  return render_template('application_submitted.html', application=data, job=job)
 
 @app.route('/api/jobs')
 def list_jobs():
