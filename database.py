@@ -6,7 +6,6 @@ import os
 # PlanetScale.com where the cloud database servered as a 
 # seceret Key.
 # mysql+pymysql://bbksk5gnsxjzyhv9vesk:pscale_pw_nwILVpjYaPHZE6jThp1BuCbXEryTJBwNi2eTkg7kKAF@aws.connect.psdb.cloud/jincareers?charset=utf8mb4
-
 dbinfo = os.environ['dbinfo']
 engine = create_engine(dbinfo,
                        connect_args={
@@ -42,7 +41,8 @@ def add_application_to_db(job_id, data):
     conn.execute(query, dict(job_id=job_id, full_name=data['full_name'], email=data['email'], education=data['education'], work_experience=data['work_experience'], resume_url=data['resume_url'], linkedin_url=data['linkedin_url']))
 
 
-    
+
+
     # print("type-result-", type(result))
     # result_all = result.all()
     # print("type-result.all", type(result_all))
