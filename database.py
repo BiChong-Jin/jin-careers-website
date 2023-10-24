@@ -5,7 +5,6 @@ import os
 # is not showing below, instead is has been stored in at 
 # PlanetScale.com where the cloud database servered as a 
 # seceret Key.
-# mysql+pymysql://bbksk5gnsxjzyhv9vesk:pscale_pw_nwILVpjYaPHZE6jThp1BuCbXEryTJBwNi2eTkg7kKAF@aws.connect.psdb.cloud/jincareers?charset=utf8mb4
 dbinfo = os.environ['dbinfo']
 engine = create_engine(dbinfo,
                        connect_args={
